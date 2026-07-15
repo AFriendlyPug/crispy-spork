@@ -1,0 +1,181 @@
+:root {
+    --color-primary:   #4e3668; /* base purple                  */
+    --color-secondary: #7a5c9a; /* mid purple — borders, accents */
+    --color-light:     #b89fcc; /* light purple — muted text     */
+    --color-dark:      #2e1f45; /* deep purple — hover states    */
+    --color-link:      #6b5585; /* body-copy purple — desc text  */
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a0f2e;
+    font-family: 'Lato', sans-serif;
+    padding: 2rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes mesh-drift {
+    0%   { transform: translate(0%,    0%)   scale(1);    }
+    25%  { transform: translate(18%,  -20%)  scale(1.1);  }
+    50%  { transform: translate(-20%,  18%)  scale(1.15); }
+    75%  { transform: translate(15%,   22%)  scale(1.08); }
+    100% { transform: translate(0%,    0%)   scale(1);    }
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: -50%;
+    background-image:
+        radial-gradient(at 20% 15%, rgba(235, 218, 228, 0.85) 0px, transparent 40%),
+        radial-gradient(at 80% 10%, rgba(165, 110, 181, 0.85) 0px, transparent 38%),
+        radial-gradient(at 55% 55%, rgba(78, 54, 104, 0.9)   0px, transparent 44%),
+        radial-gradient(at 10% 80%, rgba(158, 137, 154, 0.8) 0px, transparent 36%),
+        radial-gradient(at 85% 75%, rgba(46, 31, 69, 0.9)    0px, transparent 38%),
+        radial-gradient(at 40% 90%, rgba(165, 110, 181, 0.7) 0px, transparent 32%);
+    filter: blur(80px);
+    animation: mesh-drift 18s ease-in-out infinite;
+    z-index: 0;
+}
+
+.card-wrap {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 600px;
+    padding: 1.5rem 0;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #343a40;
+    font-size: 10.5pt;
+    letter-spacing: .25px;
+    border-radius: 1em;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+/* ── avatar ── */
+.avatar-wrap {
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.avatar-wrap img {
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 5px;
+    display: block;
+}
+
+/* ── header: avatar + name ── */
+.card-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.card-titles h1 {
+    color: var(--color-primary);
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+.card-titles h4 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ── divider ── */
+.card-divider {
+    width: 50%;
+    border: none;
+    border-top: 1px solid var(--color-secondary);
+    margin: 1.5rem auto;
+}
+
+/* ── tags ── */
+.card-tags {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    min-height: 1.2em;
+}
+
+/* ── characters section ── */
+.characters-title {
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: .6rem;
+}
+
+.characters-desc {
+    font-size: .85rem;
+    color: var(--color-link);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.characters-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+}
+
+/* ── characters button ── */
+.btn-characters {
+    display: inline-block;
+    padding: .5rem 2rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 5px;
+    color: var(--color-primary);
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: .85rem;
+    transition: background-color .2s, color .2s;
+}
+
+.btn-characters:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+/* ── social icons ── */
+.card-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card-socials a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color .2s;
+}
+
+.card-socials a:hover {
+    color: var(--color-dark);
+}
