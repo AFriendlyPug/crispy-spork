@@ -1,1 +1,1 @@
-# (tamacat.dev)[https://tamacat.dev]
+# [tamacat.dev](https://tamacat.dev)
