@@ -81,6 +81,24 @@ body::before {
     display: block;
 }
 
+/* ── avatar credit ── */
+.avatar-credit {
+    font-size: .65rem;
+    font-style: italic;
+    color: var(--color-link);
+    margin-top: .35rem;
+    text-align: center;
+}
+
+.avatar-credit a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.avatar-credit a:hover {
+    color: var(--color-dark);
+}
+
 /* ── header: avatar + name ── */
 .card-header {
     display: flex;
