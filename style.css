@@ -189,11 +189,21 @@ body::before {
 }
 
 .card-socials a {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
     color: var(--color-primary);
     text-decoration: none;
+    font-size: 1.1rem;
     transition: color .2s;
 }
 
 .card-socials a:hover {
     color: var(--color-dark);
+}
+
+.social-icon {
+    width: 1.1em;
+    height: 1.1em;
+    color: inherit;
 }
