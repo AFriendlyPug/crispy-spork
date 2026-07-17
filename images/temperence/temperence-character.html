@@ -1,77 +1,33 @@
-<!----------- CHARACTER CARD TEMPLATE || based on Tama profile styling from embed.html
-
-        =======================================
-
-            main accent  --------  #252427
-            dark bg      --------  #353336
-            icon bg      --------  rgb(42,40,43)
-            white text   --------  #fcfbf6
-
-        =======================================
-
-        Duplicate this file per character and swap:
-            - image src (full-body art, not a cropped avatar)
-            - name
-            - description text
-            - icon values (age / timezone / etc.)
-
-    ---------------------------->
     <div class="mx-auto my-5" style="max-width: 620px; position: relative; min-height: 460px;">
-
         <!-- MAIN IMAGE -->
         <div style="position: absolute; top: 0; left: 0; width: 42%; height: 460px; border-radius: 10em 0 10em 0; background-color: #fcfbf6; background-size: 200%; background-repeat: no-repeat; background-position: center top; background-image: url(https://tamacat.dev/images/temperence/fullbody.png);"></div>
-        <!-- / -- / -->
-
-        <!-- CONTENT (name box + description, offset right of the image) -->
+        <!-- CONTENT -->
         <div style="position: absolute; top: 0; left: 44%; right: 0; display: flex; flex-direction: column;">
-
-            <!-- NAME + DESCRIPTION WRAPPER (icons overlap this as a whole) -->
             <div style="position: relative;">
-
                 <!-- NAME BOX -->
                 <div class="py-2 px-3" style="font-weight: 900; font-family: 'Times New Roman', Times, serif; letter-spacing: 3px; font-size: 32px; background-color: #252427; color: #fcfbf6;">Angel</div>
-                <!-- / -- / -->
-
                 <!-- DETAILS GRID -->
                 <div class="d-flex flex-wrap mt-2" style="color: #fcfbf6;">
-
                     <div class="d-flex small" style="align-items: stretch; width: calc(50% - 3px); box-sizing: border-box; margin: 0 6px 6px 0; padding: 8px; background-color: #353336; border: 1px solid rgba(255,255,255,0.125);"><span class="d-flex align-items-center justify-content-center" style="background-color: #252427; color: #fcfbf6; width: 36px; height: 36px; flex-shrink: 0; margin: -8px 10px -8px -8px;"><i class="far fa-cake-candles"></i></span><span class="d-flex align-items-center">May 24th</span></div>
-
                     <div class="d-flex small" style="align-items: stretch; width: calc(50% - 3px); box-sizing: border-box; margin: 0 0 6px 0; padding: 8px; background-color: #353336; border: 1px solid rgba(255,255,255,0.125);"><span class="d-flex align-items-center justify-content-center" style="background-color: #252427; color: #fcfbf6; width: 36px; height: 36px; flex-shrink: 0; margin: -8px 10px -8px -8px;"><i class="far fa-dna"></i></span><span class="d-flex align-items-center">Angel</span></div>
-
                     <div class="d-flex small" style="align-items: stretch; width: calc(50% - 3px); box-sizing: border-box; margin: 0 6px 0 0; padding: 8px; background-color: #353336; border: 1px solid rgba(255,255,255,0.125);"><span class="d-flex align-items-center justify-content-center" style="background-color: #252427; color: #fcfbf6; width: 36px; height: 36px; flex-shrink: 0; margin: -8px 10px -8px -8px;"><i class="far fa-venus-mars"></i></span><span class="d-flex align-items-center">She/Her</span></div>
-
                     <div class="d-flex small" style="align-items: stretch; width: calc(50% - 3px); box-sizing: border-box; margin: 0; padding: 8px; background-color: #353336; border: 1px solid rgba(255,255,255,0.125);"><span class="d-flex align-items-center justify-content-center" style="background-color: #252427; color: #fcfbf6; width: 36px; height: 36px; flex-shrink: 0; margin: -8px 10px -8px -8px;"><i class="far fa-paintbrush-pencil"></i></span><span class="d-flex align-items-center"><a target="_blank" href="https://www.deviantart.com/sirinart95/art/AUCTION-ABS-8-Closed-1323778574" style="color: #fcfbf6; text-decoration: none;">SirinArt95</a></span></div>
-
-                    <!-- add more detail rows above this line -->
-
+                    <div class="d-flex small" style="align-items: stretch; width: 100%; box-sizing: border-box; margin: 6px 0 0 0; padding: 8px; background-color: #353336; border: 1px solid rgba(255,255,255,0.125);"><span class="d-flex align-items-center justify-content-center" style="background-color: #252427; color: #fcfbf6; width: 36px; height: 36px; flex-shrink: 0; margin: -8px 10px -8px -8px;"><i class="far fa-cards-blank"></i></span><span class="d-flex align-items-center">XIV | Im-Equilibra</span></div>
                 </div>
-                <!-- / -- / -->
-
                 <!-- PALETTE -->
                 <div class="d-flex justify-content-center mt-2" style="height: 17.2833px;">
-                    <!-- change background-color per swatch -->
                     <div style="border-radius: 999px; width: 22px; height: 14px; background-color: #f0efef;" class="mr-2"></div>
                     <div style="border-radius: 999px; width: 22px; height: 14px; background-color: #c6c4c6;" class="mr-2"></div>
                     <div style="border-radius: 999px; width: 22px; height: 14px; background-color: #7c7a7c;" class="mr-2"></div>
                     <div style="border-radius: 999px; width: 22px; height: 14px; background-color: #2d2c2f;" class="mr-2"></div>
                     <div style="border-radius: 999px; width: 22px; height: 14px; background-color: #111012;"></div>
-                    <!-- add more swatches after this line -->
                 </div>
-                <!-- / -- / -->
-
                 <!-- credit -->
                 <div class="row no-gutters align-items-center text-center mt-2 small text-monospace">
                     <div class="col"><hr class="m-0"></div>
                     <div class="col-auto px-3"><a class="small text-muted" href="https://toyhou.se/acodingperson" target="_blank" style="text-decoration: none;">inspired by acp</a></div>
                     <div class="col"><hr class="m-0"></div>
                 </div>
-                <!-- // -->
-
             </div>
-            <!-- / -- / -->
-
         </div>
-        <!-- / -- / -->
-
     </div>

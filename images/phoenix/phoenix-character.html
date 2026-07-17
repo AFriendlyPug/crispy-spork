@@ -1,77 +1,34 @@
-    <!----------- CHARACTER CARD TEMPLATE || based on Tama profile styling from embed.html
-
-        =======================================
-
-            main accent  --------  #8b3010
-            dark bg      --------  #3a1a08
-            icon bg      --------  rgb(58,26,8)
-            white text   --------  #fcfbf6
-
-        =======================================
-
-        Duplicate this file per character and swap:
-            - image src (full-body art, not a cropped avatar)
-            - name
-            - description text
-            - icon values (age / timezone / etc.)
-
-    ---------------------------->
-    <div class="mx-auto my-5" style="max-width: 620px; position: relative; min-height: 460px;">
-
+<div class="mx-auto my-5" style="max-width: 620px; position: relative; min-height: 460px;">
         <!-- MAIN IMAGE -->
-        <div style="position: absolute; top: 0; left: 0; width: 42%; height: 460px; border-radius: 10em 0 10em 0; background-color: #fcfbf6; background-size: 150%; background-repeat: no-repeat; background-position: center top; background-image: url(https://tamacat.dev/images/azalea/PNG[1].png);"></div>
-        <!-- / -- / -->
-
-        <!-- CONTENT (name box + description, offset right of the image) -->
+        <div style="position: absolute; top: 0; left: 0; width: 42%; height: 460px; border-radius: 10em 0 10em 0; background-color: #fcfbf6; background-size: 200%; background-repeat: no-repeat; background-position: center; background-image: url(https://tamacat.dev/images/phoenix/fullbody.png);"></div>
+        <!-- CONTENT -->
         <div style="position: absolute; top: 0; left: 44%; right: 0; display: flex; flex-direction: column;">
-
-            <!-- NAME + DESCRIPTION WRAPPER (icons overlap this as a whole) -->
             <div style="position: relative;">
-
                 <!-- NAME BOX -->
-                <div class="py-2 px-3" style="font-weight: 900; font-family: 'Times New Roman', Times, serif; letter-spacing: 3px; font-size: 32px; background-color: #8b3010; color: #fcfbf6;">Character Name</div>
-                <!-- / -- / -->
-
+                <div class="py-2 px-3" style="font-weight: 900; font-family: 'Times New Roman', Times, serif; letter-spacing: 3px; font-size: 32px; background-color: #e07830; color: #fcfbf6;">TBD</div>
                 <!-- DETAILS GRID -->
                 <div class="d-flex flex-wrap mt-2" style="color: #fcfbf6;">
 
-                    <div class="d-flex small" style="align-items: stretch; width: calc(50% - 3px); box-sizing: border-box; margin: 0 6px 6px 0; padding: 8px; background-color: #3a1a08; border: 1px solid rgba(255,255,255,0.125);"><span class="d-flex align-items-center justify-content-center" style="background-color: #8b3010; color: #fcfbf6; width: 36px; height: 36px; flex-shrink: 0; margin: -8px 10px -8px -8px;"><i class="far fa-cake-candles"></i></span><span class="d-flex align-items-center">June 3rd</span></div>
-
-                    <div class="d-flex small" style="align-items: stretch; width: calc(50% - 3px); box-sizing: border-box; margin: 0 0 6px 0; padding: 8px; background-color: #3a1a08; border: 1px solid rgba(255,255,255,0.125);"><span class="d-flex align-items-center justify-content-center" style="background-color: #8b3010; color: #fcfbf6; width: 36px; height: 36px; flex-shrink: 0; margin: -8px 10px -8px -8px;"><i class="far fa-dna"></i></span><span class="d-flex align-items-center">Species</span></div>
-
-                    <div class="d-flex small" style="align-items: stretch; width: calc(50% - 3px); box-sizing: border-box; margin: 0 6px 0 0; padding: 8px; background-color: #3a1a08; border: 1px solid rgba(255,255,255,0.125);"><span class="d-flex align-items-center justify-content-center" style="background-color: #8b3010; color: #fcfbf6; width: 36px; height: 36px; flex-shrink: 0; margin: -8px 10px -8px -8px;"><i class="far fa-venus-mars"></i></span><span class="d-flex align-items-center">She/Her</span></div>
-
-                    <div class="d-flex small" style="align-items: stretch; width: calc(50% - 3px); box-sizing: border-box; margin: 0; padding: 8px; background-color: #3a1a08; border: 1px solid rgba(255,255,255,0.125);"><span class="d-flex align-items-center justify-content-center" style="background-color: #8b3010; color: #fcfbf6; width: 36px; height: 36px; flex-shrink: 0; margin: -8px 10px -8px -8px;"><i class="far fa-paintbrush-pencil"></i></span><span class="d-flex align-items-center"><a target="_blank" href="#" style="color: #fcfbf6; text-decoration: none;">Artist</a></span></div>
-
-                    <!-- add more detail rows above this line -->
-
+                    <div class="d-flex small" style="align-items: stretch; width: calc(50% - 3px); box-sizing: border-box; margin: 0 6px 6px 0; padding: 8px; background-color: #322f31; border: 1px solid rgba(255,255,255,0.125);"><span class="d-flex align-items-center justify-content-center" style="background-color: #e07830; color: #fcfbf6; width: 36px; height: 36px; flex-shrink: 0; margin: -8px 10px -8px -8px;"><i class="far fa-cake-candles"></i></span><span class="d-flex align-items-center">Febuary 11th</span></div>
+                    <div class="d-flex small" style="align-items: stretch; width: calc(50% - 3px); box-sizing: border-box; margin: 0 0 6px 0; padding: 8px; background-color: #322f31; border: 1px solid rgba(255,255,255,0.125);"><span class="d-flex align-items-center justify-content-center" style="background-color: #e07830; color: #fcfbf6; width: 36px; height: 36px; flex-shrink: 0; margin: -8px 10px -8px -8px;"><i class="far fa-dna"></i></span><span class="d-flex align-items-center">Phoenix</span></div>
+                    <div class="d-flex small" style="align-items: stretch; width: calc(50% - 3px); box-sizing: border-box; margin: 0 6px 0 0; padding: 8px; background-color: #322f31; border: 1px solid rgba(255,255,255,0.125);"><span class="d-flex align-items-center justify-content-center" style="background-color: #e07830; color: #fcfbf6; width: 36px; height: 36px; flex-shrink: 0; margin: -8px 10px -8px -8px;"><i class="far fa-venus-mars"></i></span><span class="d-flex align-items-center">She/Her</span></div>
+                    <div class="d-flex small" style="align-items: stretch; width: calc(50% - 3px); box-sizing: border-box; margin: 0; padding: 8px; background-color: #322f31; border: 1px solid rgba(255,255,255,0.125);"><span class="d-flex align-items-center justify-content-center" style="background-color: #e07830; color: #fcfbf6; width: 36px; height: 36px; flex-shrink: 0; margin: -8px 10px -8px -8px;"><i class="far fa-paintbrush-pencil"></i></span><span class="d-flex align-items-center"><a target="_blank" href="https://www.deviantart.com/sirinart95" style="color: #fcfbf6; text-decoration: none;">SirinArt95</a></span></div>
+                    <div class="d-flex small" style="align-items: stretch; width: 100%; box-sizing: border-box; margin: 6px 0 0 0; padding: 8px; background-color: #322f31; border: 1px solid rgba(255,255,255,0.125);"><span class="d-flex align-items-center justify-content-center" style="background-color: #e07830; color: #fcfbf6; width: 36px; height: 36px; flex-shrink: 0; margin: -8px 10px -8px -8px;"><i class="far fa-cards-blank"></i></span><span class="d-flex align-items-center">XIX - Ignis Eternal</span></div>
                 </div>
-                <!-- / -- / -->
-
                 <!-- PALETTE -->
                 <div class="d-flex justify-content-center mt-2" style="height: 17.2833px;">
-                    <!-- change background-color per swatch -->
                     <div style="border-radius: 999px; width: 22px; height: 14px; background-color: #f0c890;" class="mr-2"></div>
                     <div style="border-radius: 999px; width: 22px; height: 14px; background-color: #e07830;" class="mr-2"></div>
                     <div style="border-radius: 999px; width: 22px; height: 14px; background-color: #b84818;" class="mr-2"></div>
                     <div style="border-radius: 999px; width: 22px; height: 14px; background-color: #7a2208;" class="mr-2"></div>
                     <div style="border-radius: 999px; width: 22px; height: 14px; background-color: #1a0c04;"></div>
-                    <!-- add more swatches after this line -->
                 </div>
-                <!-- / -- / -->
-
-                <!-- credit -->
+                <!-- CREDIT -->
                 <div class="row no-gutters align-items-center text-center mt-2 small text-monospace">
                     <div class="col"><hr class="m-0"></div>
                     <div class="col-auto px-3"><a class="small text-muted" href="https://toyhou.se/acodingperson" target="_blank" style="text-decoration: none;">inspired by acp</a></div>
                     <div class="col"><hr class="m-0"></div>
                 </div>
-                <!-- // -->
-
             </div>
-            <!-- / -- / -->
-
         </div>
-        <!-- / -- / -->
-
     </div>
